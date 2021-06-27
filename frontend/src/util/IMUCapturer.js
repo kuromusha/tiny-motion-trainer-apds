@@ -12,6 +12,9 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License. 
 ========================================================================*/
+/* ======================================================================
+Copyright (C) 2021 Ken'ichi Kuromusha modified, Apache License 2.0
+========================================================================*/
 
 /**
  * @autor Rikard Lindstrom <rlindstrom@google.com>
@@ -85,11 +88,7 @@ class IMUCapturer {
   }
 
   handleDataReceived(data) {
-    if (!this.useMagnetometer) {
-      data = sliceArray(data, 0, 6);
-    } else {
-      data = sliceArray(data, 0, 9);
-    }
+    data = sliceArray(data, 0, 5);
 
     if (this.isArmed && !this.isRecording) {
       if (this.lastCaptureTs) {

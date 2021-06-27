@@ -12,6 +12,9 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License. 
 ========================================================================*/
+/* ======================================================================
+Copyright (C) 2021 Ken'ichi Kuromusha modified, Apache License 2.0
+========================================================================*/
 
 /**
  * @autor Rikard Lindstrom <rlindstrom@google.com>
@@ -69,15 +72,11 @@ export const version = derived(isConnected, async ($isConnected) => {
 });
 
 export const dataLabels = persistStore("bleInterface.dataLabels", [
-  "acc.x",
-  "acc.y",
-  "acc.z",
-  "gyro.x",
-  "gyro.y",
-  "gyro.z",
-  "mag.x",
-  "mag.y",
-  "mag.z",
+  "proximity",
+  "gesture",
+  "color.h",
+  "color.s",
+  "color.v",
 ]);
 
 isConnected.subscribe(async ($isConnected) => {

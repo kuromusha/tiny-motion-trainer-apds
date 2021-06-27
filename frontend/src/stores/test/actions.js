@@ -12,6 +12,9 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License. 
 ========================================================================*/
+/* ======================================================================
+Copyright (C) 2021 Ken'ichi Kuromusha modified, Apache License 2.0
+========================================================================*/
 
 /**
  * @autor Rikard Lindstrom <rlindstrom@google.com>
@@ -59,7 +62,7 @@ export async function beginTesting() {
       const [predictions] = predictionsTensor.arraySync();
       testPredictions.set(predictions);
     },
-    thresholdFilter: [1, 1, 1, 1, 1, 1, 0, 0, 0],
+    thresholdFilter: [1, 0, 0, 0, 0],
     useMagnetometer: get(captureSettings.useMagnetometer),
   });
 

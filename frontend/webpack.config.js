@@ -1,3 +1,4 @@
+// Copyright (C) 2021 Ken'ichi Kuromusha modified, Apache License 2.0
 const path = require("path");
 
 const webpack = require("webpack");
@@ -111,7 +112,7 @@ module.exports = (env) => {
       }),
       new CleanWebpackPlugin(),
       new HtmlWebpackPlugin({
-        title: `Tiny Motion Trainer`,
+        title: `Tiny Motion Trainer APDS`,
         template: "src/index.html",
       }),
       new MiniCssExtractPlugin({

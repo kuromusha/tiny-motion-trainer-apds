@@ -12,6 +12,9 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
+------------------------------------------------------------------------
+Copyright (C) 2021 Ken'ichi Kuromusha modified, Apache License 2.0
+------------------------------------------------------------------------
 
 /**
 * @author Rikard Lindstrom <rlindstrom@google.com>
@@ -29,3 +32,5 @@ limitations under the License.
     max-width: 80%;
   }
 </style>
+
+APDS

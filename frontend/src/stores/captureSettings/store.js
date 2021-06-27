@@ -12,6 +12,8 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License. 
 ========================================================================*/
+/* Copyright (C) 2021 Ken'ichi Kuromusha modified, Apache License 2.0
+========================================================================*/
 
 /**
  * @autor Rikard Lindstrom <rlindstrom@google.com>
@@ -30,13 +32,13 @@ export const minMaxValues = {
 
 export const captureThreshold = persistStore(
   "captureSettings.captureThreshold",
-  0.2,
+  0.1,
   clampValue(...minMaxValues.captureThreshold)
 );
 
 export const captureSamples = persistStore(
   "captureSettings.captureSamples",
-  20,
+  15,
   clampValue(...minMaxValues.captureSamples)
 );
 

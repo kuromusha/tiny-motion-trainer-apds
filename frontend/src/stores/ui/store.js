@@ -12,6 +12,9 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License. 
 ========================================================================*/
+/* ======================================================================
+Copyright (C) 2021 Ken'ichi Kuromusha modified, Apache License 2.0
+========================================================================*/
 
 /**
  * @autor Rikard Lindstrom <rlindstrom@google.com>
@@ -45,7 +48,7 @@ export const promptStack = writable(null);
 export const hasShownConnectPrompt = writable(false);
 
 export const sketchFileUrl = readable(
-  "https://github.com/googlecreativelab/tf4micro-motion-kit/releases/latest"
+  "https://github.com/kuromusha/tf4micro-motion-kit-apds/releases/latest"
 );
 
 export const errorStack = writable([]);

@@ -12,6 +12,8 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ======================================================================
+Copyright (C) 2021 Ken'ichi Kuromusha modified, Apache License 2.0
+======================================================================
 -->
 
 <!DOCTYPE html>
@@ -26,19 +28,15 @@ limitations under the License.
     <meta charset="utf8" />
     <meta name="viewport" content="width=device-width" />
 
-    <meta name="twitter:title" content="Tiny Motion Trainer" />
-    <meta
-      property="og:image"
-      content="https://experiments.withgoogle.com/tiny-motion-trainer/view/static/TMT_16x9.gif"
-    />
+    <meta name="twitter:title" content="Tiny Motion Trainer APDS" />
     <meta
       property="og:description"
-      content="Inspired by Teachable Machine (teachablemachine.withgoogle.com), this tool allows you to capture IMU data, label it, train a model and upload it to your Arduino board. This project is a part of a collection of experiments that shows the possibilities of building with TensorFlow Lite for Microcontrollers."
+      content="Inspired by Teachable Machine (teachablemachine.withgoogle.com), this tool allows you to capture APDS data, label it, train a model and upload it to your Arduino board. This project is a part of a collection of experiments that shows the possibilities of building with TensorFlow Lite for Microcontrollers."
     />
 
     <meta
       name="description"
-      content="Inspired by Teachable Machine (teachablemachine.withgoogle.com), this tool allows you to capture IMU data, label it, train a model and upload it to your Arduino board. This project is a part of a collection of experiments that shows the possibilities of building with TensorFlow Lite for Microcontrollers."
+      content="Inspired by Teachable Machine (teachablemachine.withgoogle.com), this tool allows you to capture APDS data, label it, train a model and upload it to your Arduino board. This project is a part of a collection of experiments that shows the possibilities of building with TensorFlow Lite for Microcontrollers."
     />
 
     <link
@@ -55,32 +53,9 @@ limitations under the License.
     />
 
     <title><%= htmlWebpackPlugin.options.title %></title>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-KWBMPFFBQT"
-    ></script>
-    <script nonce="3958daj3m">
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-KWBMPFFBQT", {
-        anonymize_ip: true,
-        referrer: document.referrer.split("?")[0],
-      });
-    </script>
   </head>
 
   <body class="mdc-typography theme">
     <div id="svelte_app"></div>
   </body>
-  <script
-    data-autoload-cookie-consent-bar="true"
-    data-autoload-cookie-consent-bar-intl-code=""
-    src="https://www.gstatic.com/brandstudio/kato/cookie_choice_component/cookie_consent_bar.v3.js"
-  ></script>
 </html>

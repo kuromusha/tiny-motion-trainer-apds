@@ -12,6 +12,9 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
+------------------------------------------------------------------------
+Copyright (C) 2021 Ken'ichi Kuromusha modified, Apache License 2.0
+------------------------------------------------------------------------
 
 /**
 * @author Rikard Lindstrom <rlindstrom@google.com>
@@ -92,7 +95,7 @@ limitations under the License.
 <header>
   <div class="branding">
     <Logo height={52} />
-    <h1>Tiny Motion Trainer</h1>
+    <h1>Tiny Motion Trainer APDS</h1>
   </div>
   <div class="menu subhead-1">
     <ul>
